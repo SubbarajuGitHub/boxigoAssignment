@@ -1,5 +1,10 @@
 import {Component} from 'react'
-import {AiOutlineArrowRight, AiFillHome, AiFillEdit} from 'react-icons/ai'
+import {
+  AiOutlineArrowRight,
+  AiFillHome,
+  AiFillEdit,
+  AiFillAppstore,
+} from 'react-icons/ai'
 import {GiBackpack, GiPathDistance} from 'react-icons/gi'
 import {CgCalendarDates} from 'react-icons/cg'
 import {IoMdCheckbox} from 'react-icons/io'
@@ -99,7 +104,7 @@ class MYMovesList extends Component {
             <p className="property-size">{propertySize}</p>
           </div>
           <div className="items-div">
-            <GiBackpack className="home-icon" />
+            <AiFillAppstore className="home-icon" />
             <p className="property-size">{totalItems}</p>
           </div>
           <div className="distance-div">

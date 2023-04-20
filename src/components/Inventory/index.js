@@ -17,11 +17,13 @@ class Inventory extends Component {
     const {EachInventoryItem} = this.props
     const {displayName, order, category} = EachInventoryItem
     const {isActiveInventory} = this.state
+    const countItems = category.map(eachItem => eachItem.items.length)
+    const totalCountItems = countItems.reduce((acc, num) => acc + num, 0)
     const InventoryOutput = isActiveInventory ? (
       <>
         <div className="inventory-item-div">
           <p className="furnature-name">
-            {displayName} <span className="span-order"> {order}</span>
+            {displayName} <span className="span-order"> {totalCountItems}</span>
           </p>
           <RiArrowDropDownLine
             className="drop-down-icon"
@@ -37,7 +39,7 @@ class Inventory extends Component {
     ) : (
       <div className="inventory-item-div">
         <p className="furnature-name">
-          {displayName} <span className="span-order"> {order}</span>
+          {displayName} <span className="span-order"> {totalCountItems}</span>
         </p>
         <RiArrowDropDownLine
           className="drop-down-icon"

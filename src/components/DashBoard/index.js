@@ -1,8 +1,7 @@
 import {Component} from 'react'
 import {FaTruckMoving} from 'react-icons/fa'
 import {CgProfile} from 'react-icons/cg'
-import {AiTwotoneDatabase} from 'react-icons/ai'
-import {RiLogoutCircleRLine} from 'react-icons/ri'
+import {RiLogoutCircleRLine, RiDatabaseFill} from 'react-icons/ri'
 import './index.css'
 
 class DashBoard extends Component {
@@ -18,7 +17,7 @@ class DashBoard extends Component {
           <p className="icon-name">MY PROFILE</p>
         </div>
         <div className="icon-main-div">
-          <AiTwotoneDatabase className="dashboard-icons" />
+          <RiDatabaseFill className="dashboard-icons" />
           <p className="icon-name">GET QUOTE</p>
         </div>
         <div className="icon-main-div">
